@@ -1,0 +1,31 @@
+<%# Displaying the appointment details %>
+<p id="notice"><%= notice %></p>
+<h1>View Appointment</h1><br>
+
+<%# Displaying the appointment name %>
+<p>
+  <strong>Appointment Name:</strong>
+  <%= @appointment.name %>
+</p>
+
+<%# Displaying the starting time of the appointment %>
+<p>
+  <strong>Start time:</strong>
+  <%= @appointment.start_time %>
+</p>
+
+<%# Displaying the ending time of the appointment %>
+<p>
+  <strong>End time:</strong>
+  <%= @appointment.end_time %>
+</p>
+
+<%# Displaying the notes of the appointment %>
+<p>
+  <strong>Notes:</strong>
+  <%= @appointment.notes %>
+</p>
+
+<%# Providing links to edit and back to the appointment page %>
+<%= link_to 'Edit', edit_appointment_path(@appointment) %> |
+<%= link_to 'Back', appointments_path %>

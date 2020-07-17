@@ -1,0 +1,8 @@
+<h1>Modify Appointment</h1>
+
+<%# Rendering form to edit the appointment schedule %>
+<%= render 'form', appointment: @appointment %>
+
+<%# Providing links to view the appointment schedule and navigating to the main calendar %><br><br><br>
+<%= link_to 'View', @appointment %> |
+<%= link_to 'Back', appointments_path %>
